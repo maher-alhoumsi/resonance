@@ -19,18 +19,22 @@ export function DashboardHeader() {
       </div>
 
       <div className="lg:flex items-center gap-3 hidden">
-        <Button variant="outline" size="sm">
-          <Link href="mailto:business@codewithantonio.com">
-            <ThumbsUp />
-            <span className="hidden lg:block">Feedback</span>
-          </Link>
+        <Button
+          size="sm"
+          variant="outline"
+          render={<Link href="mailto:maher.alhoumsi@gmail.com" />}
+        >
+          <ThumbsUp />
+          <span className="hidden lg:block">Feedback</span>
         </Button>
 
-        <Button variant="outline" size="sm">
-          <Link href="mailto:business@codewithantonio.com">
-            <Headphones />
-            <span className="hidden lg:block">Need help?</span>
-          </Link>
+        <Button
+          size="sm"
+          variant="outline"
+          render={<Link href="mailto:maher.alhoumsi@gmail.com" />}
+        >
+          <Headphones />
+          <span className="hidden lg:block">Need help?</span>
         </Button>
       </div>
     </div>

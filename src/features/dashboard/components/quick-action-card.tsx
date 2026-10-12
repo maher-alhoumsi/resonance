@@ -34,11 +34,15 @@ const QuickActionCard = ({ title, gradient, href, description }: Props) => {
           </p>
         </div>
 
-        <Button variant="outline" size="xs" className="w-fit">
-          <Link href={href} className="flex items-center gap-1">
-            Try now
-            <ArrowRight className="size-3" />
-          </Link>
+        <Button
+          size="xs"
+          variant="outline"
+          className="w-fit"
+          nativeButton={false}
+          render={<Link href={href} />}
+        >
+          Try now
+          <ArrowRight className="size-3" />
         </Button>
       </div>
     </div>

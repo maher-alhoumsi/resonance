@@ -1,9 +1,9 @@
 import { Headphones, ThumbsUp } from 'lucide-react';
 import Link from 'next/link';
 
+import { cn } from '@/lib/utils';
 import { Button } from '@/components/ui/button';
 import { SidebarTrigger } from '@/components/ui/sidebar';
-import { cn } from '@/lib/utils';
 
 export function PageHeader({
   title,
@@ -25,18 +25,22 @@ export function PageHeader({
       </div>
 
       <div className="flex items-center gap-3">
-        <Button variant="outline" size="sm">
-          <Link href="mailto:business@codewithantonio.com">
-            <ThumbsUp />
-            <span className="hidden lg:block">Feedback</span>
-          </Link>
+        <Button
+          size="sm"
+          variant="outline"
+          render={<Link href="mailto:maher.alhoumsi@gmail.com" />}
+        >
+          <ThumbsUp />
+          <span className="hidden lg:block">Feedback</span>
         </Button>
 
-        <Button variant="outline" size="sm">
-          <Link href="mailto:business@codewithantonio.com">
-            <Headphones />
-            <span className="hidden lg:block">Need help?</span>
-          </Link>
+        <Button
+          size="sm"
+          variant="outline"
+          render={<Link href="mailto:maher.alhoumsi@gmail.com" />}
+        >
+          <Headphones />
+          <span className="hidden lg:block">Need help?</span>
         </Button>
       </div>
     </div>
