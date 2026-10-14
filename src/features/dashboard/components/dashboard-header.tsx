@@ -22,6 +22,7 @@ export function DashboardHeader() {
         <Button
           size="sm"
           variant="outline"
+          nativeButton={false}
           render={<Link href="mailto:maher.alhoumsi@gmail.com" />}
         >
           <ThumbsUp />
@@ -31,6 +32,7 @@ export function DashboardHeader() {
         <Button
           size="sm"
           variant="outline"
+          nativeButton={false}
           render={<Link href="mailto:maher.alhoumsi@gmail.com" />}
         >
           <Headphones />
