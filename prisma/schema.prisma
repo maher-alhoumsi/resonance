@@ -17,7 +17,7 @@ enum VoiceVariant {
   CUSTOM
 }
 
-enum VoiceGategory {
+enum VoiceCategory {
   AUDIOBOOK
   CONVERSATIONAL
   CUSTOMER_SERVICE
@@ -41,7 +41,7 @@ model Voice {
 
   description String?
 
-  category VoiceGategory @default(GENERAL)
+  category VoiceCategory @default(GENERAL)
   language String        @default("en-US")
   variant  VoiceVariant
 
